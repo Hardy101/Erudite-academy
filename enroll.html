@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/boxicons/css/boxicons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <title>Erudite Academy / Application form</title>
+</head>
+<body>
+<a href="#" class="bx bxs-up-arrow-alt back-to-top"></a>
+    <div class="sidebar" id="sidebar">
+        <button class="closeNav bx bx-window-close" id="closeNav" onclick="closeNav()"></button>
+        <div class="sdb-links">
+            <a href="index.html">home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="staff.html">Our staff</a>
+            <button class="accordion">Portal login</button>
+            <div class="panel">
+                <a href="s-login.html">Student Login</a>
+                <a href="a-login.html">Admin Login</a>
+            </div>
+            
+        </div>
+    </div>
+    <nav>
+        
+        <div class="topNav">
+            <div class="navbar">
+                <div class="logoHead"><img src="assets/img/erudite-black.png" alt=""></div>
+                <div class="links">
+                    <a href="index.html">home</a>
+                    <a href="gallery.html">gallery</a>
+                    <a href="staff.html">Our staff</a>
+                    <button class="portal">portal login <i class="bx bxs-down-arrow"></i>
+                        <div class="login">
+                            <a href="s-login.html">student login</a>
+                            <a href="a-login.html">admin login</a>
+                        </div>
+                    </button>
+                </div>
+                <button class="bx bx-menu navMenu" onclick="openNav()"></button>
+            </div>
+        </div>
+
+        <div class="showcase">
+            <div class="img-car">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="texts">
+                            <h1>Welcome to Erudite High</h1>
+                            <p>The school to be</p>
+                            
+                        </div>
+                        <img src="assets/img/ivan-aleksic-PDRFeeDniCk-unsplash.jpg" alt="">
+                      </div>
+            
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="con-center Appform" >
+        
+        <div class="con-log">
+            <form action="" class="app-form" onsubmit="return validate()">
+                <h1>Application <span>Form</span></h1> 
+                <p>Please input correct credentials into the form below <br> <br>
+                    <span class="warn-text">Be advised that any wrong information applied by
+                        deliberate effort will be effected in students admission</span>
+                
+                </p>
+
+                <div class="form-control">
+                    <input type="text" placeholder="First name of applicant" required>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" placeholder="Last name of applicant" required>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" placeholder="Other names if available">
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder="Adrress of Applicant" required>
+                </div>
+                <label for="">Class to be admitted into</label>
+                <div class="form-control">
+                    <select name="" id="" aria-placeholder="state">
+                        <option value="abia">Grade 1: Pre-Kindgerdarten</option>
+                        <option value="abia">Grade 2: Kindgerdarten</option>
+                        <option value="abia">Grade 3: Primary class I</option>
+                        <option value="abia">Grade 4: Primary class II</option>
+                        <option value="abia">Grade 5: Primary class III</option>
+                        <option value="abia">Grade 6: Primary class IV</option>
+                        <option value="abia">Grade 7: Primary class V</option>
+                        <option value="abia">Grade 8: Primary class VI</option>
+                        <option value="abia">Grade 9: Junior Secondary class I</option>
+                        <option value="abia">Grade 10: Junior Secondary class II</option>
+                        <option value="abia">Grade 11: Junior Secondary class III</option>
+                        <option value="abia">Grade 12: Senior Secondary class I</option>
+                        <option value="abia">Grade 13: Senior Secondary class II</option>
+                        <option value="abia">Grade 14: Secondary class III</option>
+                    </select>
+                </div>
+
+                <label for="">Previous class </label>
+                <div class="form-control">
+                    <select name="" id="" aria-placeholder="state">
+                        <option value="abia">Grade 1: Pre-Kindgerdarten</option>
+                        <option value="abia">Grade 2: Kindgerdarten</option>
+                        <option value="abia">Grade 3: Primary class I</option>
+                        <option value="abia">Grade 4: Primary class II</option>
+                        <option value="abia">Grade 5: Primary class III</option>
+                        <option value="abia">Grade 6: Primary class IV</option>
+                        <option value="abia">Grade 7: Primary class V</option>
+                        <option value="abia">Grade 8: Primary class VI</option>
+                        <option value="abia">Grade 9: Junior Secondary class I</option>
+                        <option value="abia">Grade 10: Junior Secondary class II</option>
+                        <option value="abia">Grade 11: Junior Secondary class III</option>
+                        <option value="abia">Grade 12: Senior Secondary class I</option>
+                        <option value="abia">Grade 13: Senior Secondary class II</option>
+                        <option value="abia">Grade 14: Secondary class III</option>
+                    </select>
+                </div>
+
+                <label for="">Upload proof of class</label>
+                <div class="form-control">
+                   <input type="file" name="" id="">
+                </div>
+
+                <label for="">Select state of residence</label>
+                <div class="form-control">
+                    <select name="" id="" aria-placeholder="state">
+                        <option value="abia">Abia</option>
+                        <option value="">Abuja</option>
+                        <option value="">Akwa Ibom</option>
+                        <option value="">Adamawa</option>
+                        <option value="">Anambra</option
+                        <option value="">Bauchi</option>
+                        <option value="one">Benin</option>
+                        <option value="">Benue</option>
+                        <option value="">Jigawa</option>
+                        <option value="">Kano</option>
+                        <option value="">Kaduna</option>
+                        <option value="">Kogi</option>
+                        <option value="">Kwara</option>
+                        <option value="">Lagos</option>
+                        <option value="">Ogun</option>
+                        <option value="">Osun</option>
+                        <option value="">Ondo</option>
+                        <option value="">Oyo</option>
+                        <option value="">Plateau</option>
+                        <option value="">Sokoto</option>
+                        <option value="">Taraba</option>
+                    </select>
+                </div>
+
+                <div class="form-diff">
+                    <input onclick="msg()" type="submit" value="Submit Application">
+                </div>
+            </form>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer-tabs">
+        <div class="f-tab-1">
+            <h2>useful links</h2>
+            <a href="index.html">home</a>
+            <a href="index.html">gallery</a>
+            <a href="staff.html">Our staff</a>
+            <a href="enroll.html">Enroll</a>
+            <button class="portal">portal login <i class="bx bxs-down-arrow"></i>
+                <div class="login">
+                    <a href="s-login.html">student login</a>
+                    <a href="a-login.html">admin login</a>
+                </div>
+            </button>
+        </div>
+        <div class="f-tab-3">
+            <h2>contact us</h2>
+            <span><i class="bx bx-message"></i> edu@Eruditesacademy.com</span>
+            <span><i class="bx bx-current-location"></i> 7, avenue road, texas</span>
+        </div>
+        
+    </div>
+    <div class="create">
+       <strong> Erudite Academy - powered by junkyard imaginations <i class="bx bxs-heart"></i></strong>
+    &copy; junkyard imaginations 2022 All Rights Reserved <br> <br>
+    <a href="Jyi.com" class="connect">@junkyard imaginations</a>
+    </div>
+</footer>
+<script src="assets/js/effects.js"></script>
+</body>
+</html>

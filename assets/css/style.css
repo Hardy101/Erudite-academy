@@ -1,0 +1,145 @@
+/*      General      */
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Josefin Sans', sans-serif;}
+* a{text-decoration: none;}
+body{background-image: url(/assets/img/body-bg.jpg); background-repeat: no-repeat;
+background-size: cover;  position: relative;}
+.up-head{background-color: whitesmoke; padding: 10px;}
+.up-head h1{text-transform: uppercase; margin: 10px;}
+.container {margin-top: 30px;}
+.back-to-top{background-color: #ebc107; color: #000; padding: 3px; transition: 0.4s; position:fixed; bottom: 5%; right: 5%; 
+z-index: 999; cursor: pointer; font-size: 25px;}
+.back-to-top:hover{background-color: #000; color: #ebc107;}
+.slideup {
+    animation-name: slideup;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+  }
+@keyframes slideup {
+    from {
+      transform: translateY(40%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+
+/*      Navigation Bar      */
+/* nav {background-image: url(/assets/img/nav-img.png); background-size: cover; background-repeat: no-repeat; height: 700px;} */
+.topNav {padding: 30px;}
+.navbar {display: flex; justify-content: space-around;}
+.links {padding-top: 15px;}
+.links a{text-transform: uppercase; color: #000; margin: 8px;}
+.logoHead {width: 200px;}
+.logoHead img{width: 100%; height: 100%;}
+/* .navbar button{display: none;} */
+.navMenu{padding: 5px; background-color: transparent; border: none; font-size: 30px; color: #000; cursor: pointer; display: none;}
+.portal {position: relative; text-transform: uppercase; color: #000; background-color: transparent; border: none; transition: 0.4s; font-size: 16px;}
+.portal:hover .login{display: block;}
+.login {display: none; position: absolute;  background-color: whitesmoke; width: 150px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; transition: 0.4s;}
+.login a{display: block; color: #ebc107; font-size: 13px; letter-spacing: 1px;}
+
+/*      Sidebar      */
+.sidebar{background-color: #000; position: fixed; top: 0%; right: 0; height: 100%; width: 0px; z-index: 999; overflow-x: hidden; transition: 0.3s;}
+.sidebar a{display: block; padding: 10px; text-transform: uppercase; text-align: center; color: #fff; transition: 0.4s;}
+.sidebar a:hover,.sidebar button:hover{color: #ebc107;}
+.accordion{width: 100%; padding: 10px; text-transform: uppercase; text-align: center; color: #fff;
+transition: 0.4s; background-color: transparent; border: none; font-size: 15px;}
+/* .active, .accordion:hover{background-color: #ccc;} */
+.panel{background-color: grey; overflow: hidden; max-height: 0; transition: max-height 0.2s ease-out;}
+.closeNav{background-color: transparent; color: #fff; font-size: 30px; position: absolute; right: 0; top: 0; border: none; margin: 5px; cursor: pointer;}
+.sdb-links{margin-top: 50px; margin-bottom: 20px;}
+
+/*      Slideshow      */
+.showcase{margin-top: 0px;}
+.slideshow-container {display: block; padding-bottom: 30px;}
+.texts{position: absolute; top: 30%; left: 15%; color: #fff; font-size: 20px; padding: 16px; z-index: 99; width: 400px;
+-webkit-animation-name: posi; -webkit-animation-duration: 2s; animation-name: posi; animation-duration: 2s;}
+.texts h1{color: #ebc107;;}
+.mySlides {position: relative; display: block; position: relative; width: 100%; overflow: hidden; height: 300px; display: none; transition: 0.4s;}  
+.mySlides img{width: 100%; height: 100%; transform: scale(1.5, 1.5); animation-name: zoomin; animation-duration: 20s; -webkit-animation-name: zoomin; -webkit-animation-duration: 20s;}
+.fade{-webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s;}
+
+/*      Choose us      */
+/* .choose{background-color: red;} */
+.choose{text-align: center;}
+.head2{text-align: center; font-size: 25px; color: #ebc107; text-transform: uppercase; font-family: 'Bebas Neue', cursive;}
+.container p{font-size: 15px; padding: 5px;}
+.tabs{display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 10px;}
+.tab-1{width: 200px; overflow-x: hidden; margin: 6px; background-color: #fafafa; text-align: center; padding:15px 8px;
+}
+.tab-1 i{font-size: 50px; margin: 10px; color: #ebc107;}
+
+.image { display: flex; justify-content: center;}
+.image img{width: 50px;}
+
+/*      Login pages styles      */
+
+.con-center{display: flex; justify-content: center; margin: 40px 0px; }
+.con-log{background-color: ; padding-bottom: 20px; width: 300px; padding: 10px 25px; border-radius: 2px; background-color: #fafafa;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; }
+.image{margin: 15px 0px;}
+.con-log p{margin: 10px 0px;}
+.con-log form h1{ font-size: 20px; text-transform: uppercase;}
+.con-log form span{color: #ebc107;}
+.form-control{background-color: white; padding: 7px; width: 100%; display: flex; margin: 15px 0px;}
+.form-diff{margin: 10px 0px; line-height: 25px;}
+.form-control input {border: none; width: 100%; font-size: 17px; padding: 5px;}
+.form-control input:focus{outline: none;}
+.con-log input[type="submit"]{padding: 7px 15px; text-transform: uppercase; background-color: #000; border: none; border-radius: 2px; color: #fff; transition: 0.3s;}
+.con-log input[type="submit"]:hover{background-color: #ebc107; transform: scale(1.12);}
+.text{margin: 10px 0px; }
+
+/*      Galley-index.html      */
+.see-anchor{margin-top: 50px;}
+.see-more{padding: 10px; color: #000; text-transform: uppercase; border: 1px solid #ebc107; transition: 0.4s; }
+.see-more:hover{background-color: #ebc107; color: #fff;}
+
+/*      Enroll      */
+.Appform .con-log{width: 400px;}
+.enroll{background-color: #003669; display: flex; justify-content: center; line-height: 30px;
+height: 200px; margin: 20px 0px; padding: 20px; color: #fff;}
+.Appform .warn-text{color: red; font-style: italic;}
+.enroll-text{text-align: center; margin-top: 10px;}
+.enroll-text h2{text-transform: uppercase;}
+.enrollNow{padding: 10px; margin: 10px; text-transform: uppercase; background-color: #ebc107;border: none; border-radius: 2px;
+color: #000; transition: 0.4s;}
+.enrollNow:hover{background-color: transparent; color: #fff; border: 1px solid #ebc107;}
+
+/*      Galley-page      */
+.gallery{padding: 10px; margin: 40px 0px;}
+.shift{display: flex; justify-content: center; flex-wrap: wrap; margin: 20px 0px;}
+.shift-1{width: 180px; margin: 5px; position: relative;}
+.shift-img{width: 100%; height: 150px;}
+.shift-img img{width: 100%; height: 100%;}
+.para{text-align: center; margin: 10px; text-transform: uppercase;}
+.small-text{font-weight: bold; margin: 10px; font-size: 14px;}
+
+/*      Anthem      */
+.about{text-align: center;}
+.center {display: flex; justify-content: center; margin: 15px;}
+.anthem{padding: 10px; text-align: center; background-color: #fafafa; margin: 10px; width: 300px;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; }
+.anthem p{font-style: italic; line-height: 20px;}
+
+.app-form{padding: 25px 0px;}
+.input-label{color: gold;}
+.form-control select{width: 100%; border: none; position: relative;}
+.form-control select:focus{outline: none;}
+
+/*      Footer      */
+footer{background-color: whitesmoke; }
+.footer-tabs{display: flex; justify-content: space-around; flex-wrap: wrap; padding: 30px 0px;}
+.create{text-transform: uppercase; color: #000; background-color: #fff; padding: 14px; letter-spacing: 2px; font-size: 10px;
+text-align: center; background-color: rgb(238, 238, 238);}
+.create i{color: #298ae6;}
+.footer-tabs h2{font-size: 20px; text-transform: uppercase; margin: 7px;}
+.f-tab-1 a, .f-tab-1 button{display: block; color: #000; text-transform: uppercase; margin: 7px; font-size: 15px;}
+.f-tab-1 button a{color: #ebc107;}
+
+
+.f-tab-3 span{display: block; margin: 5px; color: #000;}
+.connect {color: #298ae6;}
